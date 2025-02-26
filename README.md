@@ -1,6 +1,7 @@
-ScienceWeek_rag_llm
+Написано для Недели Науки 2025.
 
-Этот проект — система поиска и генерации ответов с использованием Retrieval-Augmented Generation (RAG) и моделей больших языков (LLM), интегрированная с Telegram.
+Этот проект — прототип системы поиска и генерации ответов с использованием Retrieval-Augmented Generation (RAG) и моделей больших языков (LLM), интегрированная с Telegram.
+![image](https://github.com/user-attachments/assets/2741db81-a244-4303-87e4-6d0101704b04)
 
 Установка и настройка
 
@@ -10,44 +11,34 @@ ScienceWeek_rag_llm
 
 Склонируйте проект с GitHub:
 
-git clone https://github.com/limonskislinkoy/ScienceWeek_rag_llm
-cd ScienceWeek_rag_llm
+```git clone https://github.com/limonskislinkoy/ScienceWeek_rag_llm```
+```cd ScienceWeek_rag_llm```
 
 2. Установка зависимостей
 
 Установите необходимые библиотеки Python:
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 3. Настройка переменных окружения
 
 Создайте файл .env в корне проекта и добавьте ваш Telegram API ключ:
 
-TELEGRAM_API_KEY=ваш_ключ_от_Telegram
+```TELEGRAM_API_KEY=ваш_ключ_от_Telegram```
 
-4. Запуск сервера векторного хранилища Qdrant
+4. Запуск сервера векторного хранилища Qdrant (https://github.com/qdrant/qdrant/releases)
 
 Для работы проекта необходимо запустить Qdrant. Вы можете скачать и запустить его с помощью Docker или бинарного файла.
 
 С использованием Docker:
 
-docker run -p 6333:6333 qdrant/qdrant
-
-Или скачать релиз с GitHub и запустить:
-
-Перейдите на страницу релизов Qdrant
-
-Скачайте последнюю версию для вашей ОС
-
-Распакуйте архив и запустите сервер:
-
-./qdrant
+```docker run -p 6333:6333 qdrant/qdrant```
 
 5. Запуск проекта
 
 После настройки всех зависимостей и запуска Qdrant, можно стартовать проект:
 
-python main.py
+```python main.py```
 
 Дополнительная информация
 
